@@ -11,18 +11,18 @@ $ composer require seguce92/filemanager
 
 Register the service provider array in `app/config/app.php`.
 ```php
-    Seguce92\Filemanager\ServiceProvider::class,
+Seguce92\Filemanager\ServiceProvider::class,
 ```
 
-You can optionally use the facade for shorter code. Add this to your facades:
+You can optionally use the facade for shorter code. Add this to your facades in array `aliases`:
 ```php
-    'Filemanager' => Seguce92\Filemanager\FileManagerFacade::class,
+'Filemanager' => Seguce92\Filemanager\FileManagerFacade::class,
 ```
 
 Export setting file and resources with command:
 
 ```bash
-php artisan vendor:publish
+$ php artisan vendor:publish
 ```
 
 ## Configuration
