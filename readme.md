@@ -102,13 +102,13 @@ To start using the file manager perform the respective configuration in the file
 2. In the content section use the directive
 
     ```php
-    {{ Filemanager::textarea('title for label') }}
+    {!! Filemanager::textarea('title for label') !!}
     ```
-    
+
 3. In the script section use the directive
 
     ```php
-    {{ Filemanager::tinymce() }}
+    {!! Filemanager::tinymce() !!}
     ```
 
 ### Single input with Dialog Responsive Filemanager
@@ -117,7 +117,7 @@ To start using the file manager perform the respective configuration in the file
 2. In the content section use the directive
 
     ```php
-    {{ Filemanager::input('title for label') }}
+    {!! Filemanager::input('title for label') !!}
     ```
 
 ### Example
@@ -141,9 +141,9 @@ To start using the file manager perform the respective configuration in the file
                 <label for="title">title</label>
                 <input type="text" name="title" id="title" class="form-control">
             </div>
-            {{ Filemanager::textarea('content') }}
+            {!! Filemanager::textarea('content') !!}
 
-            {{ Filemanager::input('image') }}
+            {!! Filemanager::input('image') !!}
 
             <div class="form-control">
                 <a href="{{ url('/') }}" class="btn btn-danger">CANCEL</a>
