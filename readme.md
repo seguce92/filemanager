@@ -10,19 +10,27 @@ $ composer require seguce92/filemanager
 ```
 
 Register the service provider array in `app/config/app.php`.
-
+```php
     Seguce92\Filemanager\ServiceProvider::class,
+```
 
 You can optionally use the facade for shorter code. Add this to your facades:
-
+```php
     'Filemanager' => Seguce92\Filemanager\FileManagerFacade::class,
+```
+
+Export setting file and resources with command:
+
+```bash
+php artisan vendor:publish
+```
 
 ## Configuration
 To start using the file manager perform the respective configuration in the file `app\config\seguce92\filemanager.php`
 
 ```php
     /**
-     * PATH GLOBAL FILEMAGER EMBED IN TINYMCE EDITOR
+     * PATH GLOBAL FILEMANAGER EMBED IN TINYMCE EDITOR
      * --------------------------------------------------------------
      *  Path filemanager resources
      */
@@ -79,30 +87,35 @@ To start using the file manager perform the respective configuration in the file
 ### Add style
 
 ```php
-    {!! Filemanager::style() !!}
+{!! Filemanager::style() !!}
 ```
 
 ### Add script
 
 ```php
-    {!! Filemanager::script() !!}
+{!! Filemanager::script() !!}
 ```
 ### Embend in TinyMCE 4 Editor
+
     - First add the style and script directives
     - In the content section use the directive
+
     ```php
-        {{ Filemanager::textarea('title for label') }}
+    {{ Filemanager::textarea('title for label') }}
     ```
     - In the script section use the directive
+
     ```php
-        {{ Filemanager::tinymce() }}
+    {{ Filemanager::tinymce() }}
     ```
 
 ### Single input with Dialog Responsive Filemanager
+
     - First add the style and script directives
     - In the content section use the directive
+
     ```php
-        {{ Filemanager::input('title for label') }}
+    {{ Filemanager::input('title for label') }}
     ```
 ### Example
 ```php
@@ -145,4 +158,4 @@ To start using the file manager perform the respective configuration in the file
 ```
 
 ### Information and Details
-visit site [mascodigo.net WebPage](https://mascodigo.net)
+visit site [mascodigo.net](https://mascodigo.net)
