@@ -17,6 +17,14 @@ class ServiceProvider extends IlluminateServiceProvider
         $this->publishes([__DIR__. '/public' => public_path('vendor/seguce92/filemanager')], 'Filemanager-public');
 
         $this->publishes([__DIR__. '/filemanager' => public_path('filemanager')], 'Filemanager-public');
+
+        $this->publishes([__DIR__. '/source' => public_path('source')], 'Filemanager-public');
+
+        $this->publishes([__DIR__. '/thumbs' => public_path('thumbs')], 'Filemanager-public');
+
+        $this->publishes([__DIR__ . '/resources/views/tinymce.blade.php' => resource_path('views/vendor/seguce92/filemanager/tinymce.blade.php')], 'FileManager');
+
+        $this->loadViewsFrom(__DIR__. '/resources/views', 'filemng');
     }
 
     /**

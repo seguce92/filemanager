@@ -10,7 +10,7 @@ class FileManager
      */
     public function style()
     {
-        return view('filemng::filemanager.style');
+        return view('filemng::style');
     }
 
     /**
@@ -20,7 +20,7 @@ class FileManager
      */
     public function script()
     {
-        return view('filemng::filemanager.script');
+        return view('filemng::script');
     }
 
     /**
@@ -30,7 +30,7 @@ class FileManager
      */
     public function tinymce()
     {
-        return view('filemng::filemanager.tinymce');
+        return view('filemng::tinymce');
     }
     /**
      * [input description]
@@ -40,7 +40,7 @@ class FileManager
      */
     public function input($title = 'input')
     {
-        return view('filemng::filemanager.input', compact('title'));
+        return view('filemng::input', compact('title'));
     }
 
     /**
@@ -51,6 +51,6 @@ class FileManager
      */
     public function textarea($title = 'textarea')
     {
-        return view('filemng::filemanager.textarea', compact('title'));
+        return view('filemng::textarea', compact('title'));
     }
 }
