@@ -95,15 +95,17 @@ To start using the file manager perform the respective configuration in the file
 ```php
 {!! Filemanager::script() !!}
 ```
+
 ### Embend in TinyMCE 4 Editor
 
-    - First add the style and script directives
-    - In the content section use the directive
+1. First add the style and script directives
+2. In the content section use the directive
 
     ```php
     {{ Filemanager::textarea('title for label') }}
     ```
-    - In the script section use the directive
+    
+3. In the script section use the directive
 
     ```php
     {{ Filemanager::tinymce() }}
@@ -111,13 +113,15 @@ To start using the file manager perform the respective configuration in the file
 
 ### Single input with Dialog Responsive Filemanager
 
-    - First add the style and script directives
-    - In the content section use the directive
+1. First add the style and script directives
+2. In the content section use the directive
 
     ```php
     {{ Filemanager::input('title for label') }}
     ```
+
 ### Example
+
 ```php
 @extends('seguce92::layouts.admin')
 
