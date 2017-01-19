@@ -7,7 +7,7 @@
 return [
 
     /**
-     * PATH GLOBAL FILEMAGER EMBED IN TINYMCE EDITOR
+     * PATH GLOBAL FILEMANAGER EMBED IN TINYMCE 4 EDITOR
      * --------------------------------------------------------------
      *  Path filemanager resources
      */
