@@ -123,11 +123,7 @@ To start using the file manager perform the respective configuration in the file
 ### Example
 
 ```php
-@extends('seguce92::layouts.admin')
-
-@section('title')
-	Example with Filemanager
-@endsection
+@extends('layouts.app')
 
 @section('style')
     {!! Html::style('path/to/bootstrap.min.css') !!}
@@ -137,7 +133,7 @@ To start using the file manager perform the respective configuration in the file
 @section('content')
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-            <div class="form-control">
+            <div class="form-group">
                 <label for="title">title</label>
                 <input type="text" name="title" id="title" class="form-control">
             </div>
@@ -145,7 +141,7 @@ To start using the file manager perform the respective configuration in the file
 
             {!! Filemanager::input('image') !!}
 
-            <div class="form-control">
+            <div class="form-group">
                 <a href="{{ url('/') }}" class="btn btn-danger">CANCEL</a>
                 <button type="submit" class="btn btn-success">SAVE</button>
             </div>
