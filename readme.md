@@ -1,4 +1,4 @@
-## FileManager for Laravel 5.3.*|5.4.*|5.5.*
+## FileManager for Laravel 5.3.*|5.4.*|5.5.*|5.6.*|5.8.*
 
 ## Installation
 
@@ -9,7 +9,7 @@ You can install the package for your Laravel 5 project through Composer.
 $ composer require seguce92/filemanager
 ```
 
-Register the service provider array in `app/config/app.php`.
+Register the service provider array in `app/config/app.php` if laravel version is <= 5.4.
 ```php
 Seguce92\Filemanager\ServiceProvider::class,
 ```
