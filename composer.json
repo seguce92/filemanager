@@ -2,14 +2,13 @@
     "name": "seguce92/filemanager",
     "description": "Filemanager integrator with tinyMCE for laravel framework.",
     "keywords": ["laravel", "bootstrap", "masterializecss", "filemanager", "tinymce 4"],
-    "keywords": ["laravel", "bootstrap", "materializecss", "filemanager", "tinymce 4"],
     "license": "MIT",
-    "type": "project",
+    "type": "library",
     "authors": [
         {
             "name": "Sergio Gualberto Cruz Espinoza",
             "email": "micorreoseguce@gmail.com",
-            "homepage": "https://mascodigo.net/"
+            "homepage": "https://sergiocruz.es.com/"
         }
     ],
     "require": {
@@ -18,6 +17,16 @@
     "autoload": {
         "psr-4": {
             "Seguce92\\Filemanager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seguce92\\Filemanager\\ServiceProvider"
+            ],
+            "aliases": [
+                "Seguce92\\Filemanager\\FileManagerFacade"
+            ]
         }
     }
 }

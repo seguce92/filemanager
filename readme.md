@@ -1,4 +1,4 @@
-## FileManager for Laravel 5.*
+## FileManager for Laravel 5.3.*|5.4.*|5.5.*
 
 ## Installation
 
